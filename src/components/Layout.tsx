@@ -80,7 +80,11 @@ export function Layout() {
       </a>
       <ScrollProgress />
 
-      <header className={`nav${scrolled || menuOpen ? ' nav--solid' : ''}`}>
+      <header
+        className={`nav${scrolled && !menuOpen ? ' nav--solid' : ''}${
+          menuOpen ? ' nav--menu-open' : ''
+        }`}
+      >
         <div className="nav__inner">
           <Brand />
           <nav className="nav__links" aria-label="Navegação principal">
@@ -116,6 +120,7 @@ export function Layout() {
               data-open={menuOpen}
               onClick={() => setMenuOpen((open) => !open)}
             >
+              <span />
               <span />
               <span />
             </button>
