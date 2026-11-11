@@ -30,6 +30,7 @@ export default function Categories() {
               <Reveal key={categoria.id} delay={index * 0.04}>
                 <Link
                   to={`/categorias/${categoria.id}`}
+                  className="category-card"
                   style={{
                     display: 'grid',
                     gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 0.6fr)',
@@ -61,8 +62,19 @@ export default function Categories() {
                     <p style={{ color: 'var(--muted)', maxWidth: '46ch', lineHeight: 1.7, fontSize: '0.94rem' }}>
                       {categoria.descricao}
                     </p>
-                    <span className="link-arrow" style={{ marginTop: 20, display: 'inline-flex' }}>
-                      Ver receitas da categoria
+                    <div className="category-card__recipes">
+                      <span className="category-card__recipes-label">Neste grupo</span>
+                      <div className="category-card__recipe-list">
+                        {lista.map((receita) => (
+                          <span className="category-card__recipe" key={receita.slug}>
+                            <span>{String(receita.numero).padStart(2, '0')}</span>
+                            {receita.titulo}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                    <span className="category-card__action">
+                      Abrir as {lista.length} receitas
                       <Icon name="arrow" size={16} />
                     </span>
                   </div>

@@ -2,7 +2,7 @@
 
 ## 1. Página inicial com apresentação e acesso às cinco categorias — concluído
 - Hero com título "Comida boa também é respeito", selo circular, estatísticas (15 receitas, 5 categorias, 10 min) e CTAs para receitas e categorias.
-- Índice editorial das cinco categorias (Sem Glúten, Sem Leite, Ricas em Proteínas, Saudáveis, Outras Restrições) com número, subtítulo, contagem de receitas, ícone e imagem de prévia no hover.
+- Índice editorial das cinco categorias (Sem Glúten, Sem Leite, Ricas em Proteínas, Saudáveis, Outras Restrições) com número, descrição sempre visível em celular e tablet, contagem, indicação “Abrir categoria”, ícone e imagem de prévia no hover.
 - Seções complementares: marquee de restrições, destaques em carrossel, manifesto "Alimentação inclusiva é qualidade de vida", grade de seis receitas e faixa de CTA.
 
 ## 2. Catálogo com as 15 receitas em cartões (nome, imagem e categoria) — concluído
@@ -23,7 +23,7 @@
 ## 5. Navegação entre início, catálogo, categorias e fichas — concluído
 - Header fixo com Início, Receitas, Categorias e "Por que importa" (âncora), além de CTA "Ver as 15 receitas".
 - Menu mobile em tela cheia com animação; rodapé com categorias, receitas e atalhos.
-- Páginas `/categorias` e `/categorias/:slug` com apresentação da categoria, suas receitas e links cruzados; página 404 para endereços inválidos.
+- Páginas `/categorias` e `/categorias/:slug` com descrição, imagem, lista dos nomes das três receitas por categoria, botão “Abrir as 3 receitas”, suas fichas e links cruzados; página 404 para endereços inválidos.
 
 ## 6. Design responsivo e animações suaves — concluído
 - Layout adaptado para desktop (≥1024px), tablet (≤1024px) e celular (≤780px), verificado por captura em 1280×900 e 390×844.

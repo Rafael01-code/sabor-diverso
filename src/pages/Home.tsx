@@ -219,7 +219,7 @@ export default function Home() {
                   <span className="cat-row__desc">{categoria.subtitulo}</span>
                   <span className="cat-row__side">
                     <span className="cat-row__count">
-                      {receitasDaCategoria(categoria.id).length} receitas
+                      {receitasDaCategoria(categoria.id).length} receitas · Abrir categoria
                     </span>
                     <span className="cat-row__arrow">
                       <Icon name="arrow" size={16} />
