@@ -23,11 +23,11 @@
 ## 5. Navegação entre início, catálogo, categorias e fichas — concluído
 - Header fixo com Início, Receitas, Categorias e "Por que importa" (âncora), além de CTA "Ver as 15 receitas".
 - Menu mobile em tela cheia com animação, botão de três linhas e links legíveis sem sobreposição; tocar em um link fecha o menu e abre a página escolhida. Rodapé com categorias, receitas e atalhos.
-- Páginas `/categorias` e `/categorias/:slug` com descrição, imagem, lista dos nomes das três receitas por categoria, botão “Abrir as 3 receitas”, suas fichas e links cruzados; página 404 para endereços inválidos.
+- Páginas `/categorias` e `/categorias/:slug` com descrição, imagem, lista dos nomes das três receitas por categoria, botão “Abrir as 3 receitas”, suas fichas e links cruzados; página 404 para endereços inválidos. Ao tocar em uma receita, a ficha completa abre sem exigir recarga manual.
 
 ## 6. Design responsivo e animações suaves — concluído
 - Layout adaptado para desktop (≥1024px), tablet (≤1024px) e celular (≤780px), verificado por captura em 1280×900 e 390×844; painel móvel ocupa a tela toda e mantém os links separados.
-- Animações: revelação no scroll, transições de página, parallax do herói, hover de cartões e linhas de categoria, carrossel com controles, marquee e pílula de filtro animada.
+- Animações: revelação no scroll, parallax do herói, hover de cartões e linhas de categoria, carrossel com controles, marquee e pílula de filtro animada.
 - Respeito a `prefers-reduced-motion` e estilos de impressão da ficha.
 
 ## 7. Conteúdo em português e fiel ao cardápio impresso — concluído
@@ -36,4 +36,4 @@
 ## 8. Validação técnica e publicação — validação concluída; publicação das melhorias aguarda autorização
 - Typecheck (`tsc -b`) e build de produção (`vite build`) executados sem erros.
 - Manifesto de rotas (`/manus-routes.json`), `app.config.ts` com logo, configuração de build estático e fallback SPA declarados.
-- A versão anterior está publicada; a correção recente do painel móvel foi validada no projeto, mas ainda aguarda autorização para ser publicada no site ao vivo.
+- A versão com o painel móvel corrigido está publicada; a abertura imediata das fichas sem depender da animação da página está em validação e ainda não foi publicada.

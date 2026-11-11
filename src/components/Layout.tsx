@@ -1,4 +1,4 @@
-import { AnimatePresence, motion, useReducedMotion, useScroll, useSpring } from 'framer-motion';
+import { AnimatePresence, motion, useScroll, useSpring } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 import { categorias, receitas } from '../data/recipes';
@@ -52,7 +52,6 @@ export function Layout() {
   const location = useLocation();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const reduce = useReducedMotion();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 18);
@@ -161,18 +160,9 @@ export function Layout() {
         </AnimatePresence>
       </header>
 
-      <AnimatePresence mode="wait" initial={false}>
-        <motion.main
-          id="conteudo"
-          key={location.pathname}
-          initial={reduce ? false : { opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={reduce ? undefined : { opacity: 0, y: -8 }}
-          transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-        >
-          <Outlet />
-        </motion.main>
-      </AnimatePresence>
+      <main id="conteudo">
+        <Outlet />
+      </main>
 
       <footer className="footer">
         <svg className="footer__art" viewBox="0 0 200 200" aria-hidden="true">
