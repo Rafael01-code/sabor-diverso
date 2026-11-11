@@ -33,7 +33,7 @@
 ## 7. Conteúdo em português e fiel ao cardápio impresso — concluído
 - Todos os textos, ingredientes e modos de preparo em português do Brasil, mantendo as 15 receitas e as cinco categorias do material original, com preparo detalhado em etapas.
 
-## 8. Validação técnica e publicação — pendente de publicação
+## 8. Validação técnica e publicação — concluído
 - Typecheck (`tsc -b`) e build de produção (`vite build`) executados sem erros.
 - Manifesto de rotas (`/manus-routes.json`), `app.config.ts` com logo, configuração de build estático e fallback SPA declarados.
-- Publicação do checkpoint a ser executada.
+- Publicação executada a partir do checkpoint validado (build estático `dist`).
