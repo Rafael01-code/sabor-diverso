@@ -7,7 +7,7 @@
 
 ## 2. Catálogo com as 15 receitas em cartões (nome, imagem e categoria) — concluído
 - `src/data/recipes.ts` reúne as 15 receitas numeradas de 1 a 15, fiéis ao cardápio impresso, com imagem própria gerada para cada prato.
-- Cartões exibem número, imagem, etiqueta da restrição, título, resumo, tempo e rendimento.
+- Cartões exibem número, imagem, etiqueta da restrição, título, resumo, tempo, rendimento e o atalho visível “Ver receita completa”; clicar abre a ficha individual.
 - Página `/receitas` lista todas as receitas; página inicial mostra as seis primeiras.
 
 ## 3. Filtro por categoria com opção de voltar a todas — concluído

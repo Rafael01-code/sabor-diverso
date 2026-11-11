@@ -1027,6 +1027,22 @@ ol {
   color: var(--muted);
 }
 
+.card__open {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--olive);
+  font-size: 0.72rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: color 0.35s var(--ease);
+}
+
+.card:hover .card__open {
+  color: var(--terracotta);
+}
+
 .card__meta {
   display: inline-flex;
   align-items: center;

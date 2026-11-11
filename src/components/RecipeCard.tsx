@@ -29,8 +29,11 @@ export function RecipeCard({ receita, index = 0 }: { receita: Receita; index?: n
               {receita.tempo}
             </span>
             <span className="card__meta">{receita.porcoes}</span>
-            <span className="card__arrow">
-              <Icon name="arrow" size={15} />
+            <span className="card__open">
+              Ver receita completa
+              <span className="card__arrow">
+                <Icon name="arrow" size={15} />
+              </span>
             </span>
           </div>
         </div>
