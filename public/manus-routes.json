@@ -1,0 +1,9 @@
+{
+  "routes": [
+    { "path": "/", "title": "Sabor Diverso" },
+    { "path": "/receitas", "title": "Todas as receitas" },
+    { "path": "/receitas/:slug", "title": "Receita" },
+    { "path": "/categorias", "title": "Categorias" },
+    { "path": "/categorias/:slug", "title": "Categoria" }
+  ]
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" width="320" height="96">
+  <rect width="320" height="96" fill="#F7F2E7"/>
+  <g transform="translate(16,16)">
+    <circle cx="32" cy="32" r="24" fill="none" stroke="#4A5A36" stroke-width="2"/>
+    <path d="M32 47c0-9.5 4.2-16.5 13.5-19.5C44.5 37 40.5 44 32 47Z" fill="#4A5A36"/>
+    <path d="M32 47c0-7.2-3.2-12.4-10.4-14.6C22.4 39.6 25.6 44.7 32 47Z" fill="#BF5B3A"/>
+    <circle cx="32" cy="23" r="2.6" fill="#D8A34A"/>
+  </g>
+  <text x="88" y="48" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#22251B" letter-spacing="-0.5">Sabor <tspan font-style="italic" fill="#BF5B3A">Diverso</tspan></text>
+  <text x="88" y="70" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#6F6D5E" letter-spacing="4">CARDÁPIO ESPECIAL</text>
+</svg>
